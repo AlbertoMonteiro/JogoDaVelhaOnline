@@ -42,13 +42,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtIp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.rbOnline = new System.Windows.Forms.RadioButton();
             this.rbComputador = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -207,7 +207,7 @@
             this.btnIniciar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnIniciar.Location = new System.Drawing.Point(73, 162);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(54, 25);
+            this.btnIniciar.Size = new System.Drawing.Size(45, 23);
             this.btnIniciar.TabIndex = 4;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
@@ -224,6 +224,24 @@
             this.panel1.Size = new System.Drawing.Size(183, 109);
             this.panel1.TabIndex = 3;
             this.panel1.Visible = false;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(6, 69);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(174, 23);
+            this.txtNome.TabIndex = 5;
+            this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNome.WordWrap = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 51);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Nome:";
             // 
             // txtIp
             // 
@@ -249,7 +267,7 @@
             this.rbOnline.AutoSize = true;
             this.rbOnline.Location = new System.Drawing.Point(105, 22);
             this.rbOnline.Name = "rbOnline";
-            this.rbOnline.Size = new System.Drawing.Size(62, 19);
+            this.rbOnline.Size = new System.Drawing.Size(55, 17);
             this.rbOnline.TabIndex = 1;
             this.rbOnline.Text = "Online";
             this.rbOnline.UseVisualStyleBackColor = true;
@@ -261,7 +279,7 @@
             this.rbComputador.Checked = true;
             this.rbComputador.Location = new System.Drawing.Point(6, 22);
             this.rbComputador.Name = "rbComputador";
-            this.rbComputador.Size = new System.Drawing.Size(93, 19);
+            this.rbComputador.Size = new System.Drawing.Size(82, 17);
             this.rbComputador.TabIndex = 0;
             this.rbComputador.TabStop = true;
             this.rbComputador.Text = "Computador";
@@ -276,25 +294,7 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Para jogar online é necessário liberar a porta 18000 do firewall e/ou modem";
             // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(6, 69);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(174, 23);
-            this.txtNome.TabIndex = 5;
-            this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtNome.WordWrap = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 51);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Nome:";
-            // 
-            // Form1
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -313,7 +313,7 @@
             this.Controls.Add(this.lbl1);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "FrmPrincipal";
             this.Text = "Jogo da Velha";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.FormLoad);
